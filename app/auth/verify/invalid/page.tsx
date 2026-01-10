@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <main>
       <h1>無効なURLです</h1>
-      <p>リンクが正しくない可能性があります。お手数ですが、もう一度サインアップを行ってください。</p>
-      <Link href="/signup">サインアップへ戻る</Link>
+      <p>リンクが正しくない可能性があります。</p>
+      <Link href="/">トップへ戻る</Link>
     </main>
   )
 }
