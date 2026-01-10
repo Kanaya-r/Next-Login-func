@@ -35,7 +35,7 @@ export default function SignupForm() {
         return
       }
 
-      setResult({ status: 'success', message: 'アカウントを作成しました。' })
+      setResult({ status: 'success', message: '確認メールを送信しました。メールをご確認ください。' })
       setName('')
       setEmail('')
       setPassword('')
@@ -79,7 +79,7 @@ export default function SignupForm() {
       </label>
 
       <button type="submit" disabled={result.status === 'loading'}>
-        {result.status === 'loading' ? '作成中...' : '作成'}
+        {result.status === 'loading' ? '確認中...' : '作成'}
       </button>
 
       {result.status === 'error' && (
