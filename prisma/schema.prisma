@@ -36,7 +36,7 @@ model VerificationToken {
 model Session {
   id        Int      @id @default(autoincrement())
   userId    Int
-  tokenHash String   @unique
+  sessionToken String   @unique
   expiresAt DateTime
   createdAt DateTime @default(now())
 
