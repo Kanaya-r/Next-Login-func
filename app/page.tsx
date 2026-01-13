@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getCurrentUser } from '@/src/lib/auth/getCurrentUser'
+import LogoutButton from '@/app/_components/LogoutButton'
 
 export default async function Home() {
   const user = await getCurrentUser()
@@ -18,6 +19,7 @@ export default async function Home() {
             <span>
               ようこそ、{user.name}
             </span>
+            <LogoutButton />
           </>
         )}
       </main>
