@@ -20,6 +20,13 @@
 # production
 /build
 
+# vs
+.vscode/*
+!.vscode/settings.json
+
+# serena
+.serena/*
+
 # misc
 .DS_Store
 *.pem
